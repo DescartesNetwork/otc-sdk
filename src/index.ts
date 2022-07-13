@@ -20,10 +20,7 @@ export type SolPrice = {
 }
 
 export default class OTC {
-  public service: string
-  constructor(service: string = 'https://cors.sentre.io/otc') {
-    this.service = service
-  }
+  constructor(public readonly service: string = 'https://cors.sentre.io/otc') {}
 
   /**
    * Validate the address
