@@ -1,0 +1,54 @@
+{
+  "name": "otc-sdk",
+  "version": "1.0.0",
+  "description": "Solana OTC Service SDK",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "nodemon --exec \"yarn lint && ts-node\" src/index.ts",
+    "deploy": "node dist/index.js",
+    "lint": "eslint \"{src,test}/**/*.ts\"",
+    "clean": "rm -rf dist",
+    "predocs": "typedoc --excludePrivate --excludeProtected --includeVersion ./src/index.ts",
+    "docs": "echo otc.sentre.io >> ./docs/CNAME && gh-pages -d docs",
+    "prebuild": "yarn clean",
+    "build": "tsc",
+    "postbuild": "tsc-alias"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DescartesNetwork/otc-sdk.git"
+  },
+  "keywords": [
+    "solana",
+    "otc",
+    "sentre",
+    "senhub"
+  ],
+  "author": "Tu Phan <tuphan@descartes.network>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DescartesNetwork/otc-sdk/issues"
+  },
+  "homepage": "https://github.com/DescartesNetwork/otc-sdk#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=16 <=18"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.47.4",
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "eslint": "^8.19.0",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.8.2",
+    "tsc-alias": "^1.6.11",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.4"
+  }
+}
