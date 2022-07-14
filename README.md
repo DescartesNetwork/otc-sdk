@@ -35,6 +35,7 @@ const otc = new OTC()
 
 /**
  * Get whitelisted spl tokens
+ * You can quick review whitelist by: https://cors.sentre.io/otc/whitelist
  */
 const whitelist = await otc.getWhitelist()
 // {
@@ -90,3 +91,7 @@ const tx = await otc.exchange({
 const signedTx = await wallet.signTransaction(tx)
 const txId = await sendTransaction(signedTx) // This function is just a pseudo-code and should replaced it by yours.
 ```
+
+## Whitelist
+
+👉 [https://cors.sentre.io/otc/whitelist](https://cors.sentre.io/otc/whitelist)
