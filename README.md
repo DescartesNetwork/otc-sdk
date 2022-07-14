@@ -101,4 +101,6 @@ const txId = await sendTransaction(signedTx) // This function is just a pseudo-c
 
 ## Whitelist
 
-👉 [https://cors.sentre.io/otc/whitelist](https://cors.sentre.io/otc/whitelist)
+👉 Current whitelist: [https://cors.sentre.io/otc/whitelist](https://cors.sentre.io/otc/whitelist)
+
+👉 Wanna support more SPL tokens? Let's create a proposal here: [https://github.com/DescartesNetwork/otc-sdk](https://github.com/DescartesNetwork/otc-sdk/issues)
