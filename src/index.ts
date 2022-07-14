@@ -24,7 +24,7 @@ export default class OTC {
 
   /**
    * Validate the address
-   * @param address
+   * @param address solana wallet/account address
    * @returns
    */
   static isAddress = (address: string): boolean => {
@@ -37,7 +37,7 @@ export default class OTC {
   }
 
   /**
-   * Get whitelise. The list of payable tokens
+   * Get whitelise. The list of payable tokens.
    * @returns
    */
   getWhitelist = async () => {
@@ -46,12 +46,24 @@ export default class OTC {
     return data as AcceptedPayment
   }
 
+  /**
+   * Get SOL price based on spl token.
+   * @param tokenSymbol The spl token symbol, e.g., usdc, uxd.
+   * @returns
+   */
   getSolPrice = async ({ tokenSymbol }: { tokenSymbol: string }) => {
     const url = `${this.service}/otc/get-sol-price/${tokenSymbol}`
     const { data } = await axios.get(url)
     return data as SolPrice
   }
 
+  /**
+   * Exchange spl tokens for a specific amount of sol.
+   * @param walletAddress User wallet address.
+   * @param tokenSymbol The spl token symbol, e.g., usdc, uxd.
+   * @param solAmount The desired amount of sol.
+   * @returns
+   */
   exchange = async ({
     walletAddress,
     tokenSymbol,
@@ -62,10 +74,12 @@ export default class OTC {
     solAmount: number
   }) => {
     if (!OTC.isAddress(walletAddress)) throw new Error('Invalid wallet address')
-    const whitelist = await this.getWhitelist()
-    if (!Object.keys(whitelist).includes(tokenSymbol.toLowerCase()))
-      throw new Error('Unsupported token symbol')
     if (solAmount <= 0) throw new Error('SOL amount must be greater than zero')
+
+    const whitelist = await this.getWhitelist()
+    tokenSymbol = tokenSymbol.toLowerCase()
+    if (!Object.keys(whitelist).includes(tokenSymbol))
+      throw new Error('Unsupported token symbol')
 
     const url = `${this.service}/exchange/${walletAddress}/${tokenSymbol}/${solAmount}`
     const {
