@@ -19,7 +19,7 @@ export type SolPrice = {
   timeTaken: number
 }
 
-export default class OTC {
+export class OTC {
   constructor(public readonly service: string = 'https://cors.sentre.io/otc') {}
 
   /**

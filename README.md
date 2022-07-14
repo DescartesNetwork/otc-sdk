@@ -1,5 +1,13 @@
 # otc-sdk
 
+[![https://img.shields.io/npm/v/@sentre/otc-sdk](https://img.shields.io/npm/v/@sentre/otc-sdk)](https://www.npmjs.com/package/@sentre/otc-sdk)
+[![https://img.shields.io/npm/dw/@sentre/otc-sdk](https://img.shields.io/npm/dm/@sentre/otc-sdk)](https://www.npmjs.com/package/@sentre/otc-sdk)
+[![https://img.shields.io/bundlephobia/min/@sentre/otc-sdk](https://img.shields.io/bundlephobia/min/@sentre/otc-sdk)](https://www.npmjs.com/package/@sentre/otc-sdk)
+[![https://img.shields.io/github/issues-raw/descartesnetwork/otc-sdk](https://img.shields.io/github/issues-raw/descartesnetwork/otc-sdk)](https://github.com/DescartesNetwork/otc-sdk)
+[![https://img.shields.io/github/license/descartesnetwork/otc-sdk](https://img.shields.io/github/license/descartesnetwork/otc-sdk)](https://github.com/DescartesNetwork/otc-sdk)
+
+[![https://img.shields.io/twitter/follow/SentreProtocol?style=social](https://img.shields.io/twitter/follow/SentreProtocol?style=social)](https://twitter.com/SentreProtocol)
+
 Solana OTC Service SDK. Users can exchange SPL tokens for SOL even with SOL for transaction fees. Currently, the service is available on **mainnet ONLY**
 
 ## Installation
@@ -14,10 +22,14 @@ or,
 yarn add @sentre/otc-sdk
 ```
 
+## Prototypes
+
+1. [Any Arts](https://hub.sentre.io/app/any_arts?autoInstall=true) - Buy NFTs on [Magic Eden](https://magiceden.io/) by youe SPL tokens.
+
 ## Usage
 
 ```ts
-import OTC from '@sentre/otc-sdk'
+import { OTC } from '@sentre/otc-sdk'
 
 const otc = new OTC()
 
@@ -69,7 +81,7 @@ const solPriceBasedOnUXD = await otc.getSolPrice({ tokenSymbol: 'uxd' })
 /**
  * Get exchange tx of usdc for 1 sol
  */
-const wallet = <Your-Wallet>
+const wallet = <Your_Wallet_Instance_Here>
 const tx = await otc.exchange({
   walletAddress: wallet.publicKey.toBase58(),
   tokenSymbol: 'usdc',

@@ -1,6 +1,6 @@
 {
   "name": "@sentre/otc-sdk",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Solana OTC Service SDK",
   "main": "./dist/index.js",
   "scripts": {
@@ -24,7 +24,10 @@
     "sentre",
     "senhub"
   ],
-  "author": "Tu Phan <tuphan@descartes.network>",
+  "author": {
+    "name": "Tu Phan",
+    "email": "tuphan@descartes.network"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/DescartesNetwork/otc-sdk/issues"
