@@ -8,7 +8,7 @@
 
 [![https://img.shields.io/twitter/follow/SentreProtocol?style=social](https://img.shields.io/twitter/follow/SentreProtocol?style=social)](https://twitter.com/SentreProtocol)
 
-Solana OTC Service SDK. Users can exchange SPL tokens for SOL even with SOL for transaction fees. Currently, the service is available on **mainnet ONLY**
+Solana OTC Service SDK. Users can exchange SPL tokens for SOL even with SOL for transaction fees. Currently, the service is available on **mainnet ONLY**.
 
 ## Installation
 
@@ -22,7 +22,7 @@ or,
 yarn add @sentre/otc-sdk
 ```
 
-## Prototypes
+## Who are using?
 
 1. [Any Arts](https://hub.sentre.io/app/any_arts?autoInstall=true) - Buy NFTs on [Magic Eden](https://magiceden.io/) by youe SPL tokens.
 
