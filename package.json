@@ -1,6 +1,6 @@
 {
   "name": "@sentre/otc-sdk",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Solana OTC Service SDK",
   "main": "./dist/index.js",
   "scripts": {

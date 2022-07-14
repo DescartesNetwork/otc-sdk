@@ -30,8 +30,8 @@ yarn add @sentre/otc-sdk
 
 ## Who are using?
 
-1. [Any Arts](https://hub.sentre.io/app/any_arts?autoInstall=true) - Buy NFTs on [Magic Eden](https://magiceden.io/) by youe SPL tokens.
-2. [Sen Assets](https://hub.sentre.io/app/sen_assets?autoInstall=true) - Feel annoying to withdraw SOL from [Binance](https://www.binance.com/) for transaction fees son [Solana](https://solana.com/)? This app will let you exchange SPL tokens to SOL with no transaction fees.
+1. [Any Arts](https://hub.sentre.io/app/any_arts?autoInstall=true) - Buy NFTs on [Magic Eden](https://magiceden.io/) by your SPL tokens.
+2. [Sen Assets](https://hub.sentre.io/app/sen_assets?autoInstall=true) - Feel annoying to withdraw SOL from [Binance](https://www.binance.com/) for transaction fees on [Solana](https://solana.com/)? This app will let you exchange SPL tokens to SOL with no transaction fees.
 
 ## Usage
 
