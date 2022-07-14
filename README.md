@@ -1,4 +1,4 @@
-# otc-sdk
+# OTC SDK
 
 [![https://img.shields.io/npm/v/@sentre/otc-sdk](https://img.shields.io/npm/v/@sentre/otc-sdk)](https://www.npmjs.com/package/@sentre/otc-sdk)
 [![https://img.shields.io/npm/dw/@sentre/otc-sdk](https://img.shields.io/npm/dm/@sentre/otc-sdk)](https://www.npmjs.com/package/@sentre/otc-sdk)
@@ -8,7 +8,13 @@
 
 [![https://img.shields.io/twitter/follow/SentreProtocol?style=social](https://img.shields.io/twitter/follow/SentreProtocol?style=social)](https://twitter.com/SentreProtocol)
 
-Solana OTC Service SDK. Users can exchange SPL tokens for SOL even with SOL for transaction fees. Currently, the service is available on **mainnet ONLY**.
+Solana OTC Service SDK. Users can exchange SPL tokens for SOL even with no SOL for transaction fees. Currently, the service is available on **mainnet ONLY**.
+
+✨ Receive exactly desired amount of SOL. No slippage. No price impact.
+
+✨ Never care about transaction fees.
+
+✨ Zero down time.
 
 ## Installation
 
@@ -25,6 +31,7 @@ yarn add @sentre/otc-sdk
 ## Who are using?
 
 1. [Any Arts](https://hub.sentre.io/app/any_arts?autoInstall=true) - Buy NFTs on [Magic Eden](https://magiceden.io/) by youe SPL tokens.
+2. [Sen Assets](https://hub.sentre.io/app/sen_assets?autoInstall=true) - Feel annoying to withdraw SOL from [Binance](https://www.binance.com/) for transaction fees son [Solana](https://solana.com/)? This app will let you exchange SPL tokens to SOL with no transaction fees.
 
 ## Usage
 
