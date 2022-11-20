@@ -1,6 +1,6 @@
 {
   "name": "@sentre/otc-sdk",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Solana OTC Service SDK",
   "main": "./dist/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "lint": "eslint \"{src,test}/**/*.ts\"",
     "clean": "rm -rf dist",
     "predocs": "typedoc --excludePrivate --excludeProtected --includeVersion ./src/index.ts",
-    "docs": "echo otc.sentre.io >> ./docs/CNAME && gh-pages -d docs",
+    "docs": "gh-pages -d docs",
     "prebuild": "yarn clean",
     "build": "tsc",
     "postbuild": "tsc-alias"
